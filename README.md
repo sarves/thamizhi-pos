@@ -10,7 +10,7 @@ The harmonisation [Universal Dependency POS (UPOS)](https://universaldependencie
 
 However, we found that the Amrita POS tagged data are more clean, therefore, we used it to train the POS tagger. We used Stanza, a neural based framework developed by Stanford University - a sccuessor of their CoreNLP framework, to train the POS tagger.
 
-The trained models can be [found here](http://nlp-tools.uom.lk/thamizhi-pos/models/models) in a compressed format. This file is in tgz format, you can extracted it using tar.
+The trained models can be [found here](http://nlp-tools.uom.lk/thamizhi-pos/models/models) in a compressed format. This file is in tgz format, you can extract it using tar.
 
 ### How to use ThamizhiPOSt
 
