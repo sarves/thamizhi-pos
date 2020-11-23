@@ -14,11 +14,11 @@ The trained models can be [found here](http://nlp-tools.uom.lk/thamizhi-pos/mode
 
 ### How to use ThamizhiPOSt
 
-- Download and install Stanza, as outlined here: https://stanfordnlp.github.io/stanza/installation_usage.html
-- Donwload [trained models](http://nlp-tools.uom.lk/thamizhi-pos/models/models), and place them in a folder called models
-- Insert your data to be POS tagged in a file called sentence.txt, and place it in the same level as the models folder
-- Download and place print_upos.py, along with sentence.txt
-- Execute the print_upos.py, output will be written to a file called pos-tagged-sentence.txt
+1. Download and install *Stanza*, as outlined here: https://stanfordnlp.github.io/stanza/installation_usage.html
+2. Donwload [trained models](http://nlp-tools.uom.lk/thamizhi-pos/models/models), and place them in a folder called *models*
+3. Insert your data to be POS tagged in a file called *sentence.txt*, and place it in the same level as the models folder
+4. Download and place *print_upos.py*, along with *sentence.txt*
+5. Execute the python script -  print_upos.py, output will be written to a file called *pos-tagged-sentence.txt*
 
 Note: In this version of tagger, it is compulsory to include a symbol (can be a period/exclamation mark / question mark) at the end of each line/sentence. Otherwise, the very last token will be considered as a punctuation. 
 
