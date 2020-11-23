@@ -31,3 +31,12 @@ An output will look like the following for the data "தமிழ் எங்�
 5	.	PUNCT
 ```
 
+### Tagged data
+
+The following datasets are tagged using ThamizhiPOSt, available for research :
+- Official data (consists of Annual reports, Audit reports, Letters - Anonymised) - 8,932 tokens/1,100 sentences
+- Sri Lankan Tamil news data - 124,203 tokens / 10,000 sentences
+
+### Acknowledgment
+This research was supported by the Accelerating Higher Education Expansion and Development (AHEAD) Operation of the Ministry of Higher Education, Sri Lanka funded by the World Bank
+
