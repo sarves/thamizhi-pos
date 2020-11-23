@@ -12,5 +12,22 @@ However, we found that the Amrita POS tagged data are more clean, therefore, we 
 
 The trained models can be [found here](http://nlp-tools.uom.lk/thamizhi-pos/models/models) in a compressed format. This file is in tgz format, you can extracted it using tar.
 
-## How to used this POS tagger
+### How to use ThamizhiPOSt
+
+- Download and install Stanza, as outlined here: https://stanfordnlp.github.io/stanza/installation_usage.html
+- Donwload [trained models](http://nlp-tools.uom.lk/thamizhi-pos/models/models), and place them in a folder called models
+- Insert your data to be POS tagged in a file called sentence.txt, and place it in the same level as the models folder
+- Download and place print_upos.py, along with sentence.txt
+- Execute the print_upos.py, output will be written to a file called pos-tagged-sentence.txt
+
+Note: In this version of tagger, it is compulsory to include a symbol (can be a period/exclamation mark / question mark) at the end of each line/sentence. Otherwise, the very last token will be considered as a punctuation. 
+
+An output will look like the following for the data "தமிழ் எங்கள் உயிருக்கு நேர் ."
+```
+1	தமிழ்	PROPN
+2	எங்கள்	PRON
+3	உயிருக்கு	NOUN
+4	நேர்	NOUN
+5	.	PUNCT
+```
 
