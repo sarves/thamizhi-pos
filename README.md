@@ -1,5 +1,5 @@
 # ThamizhiPOSt - a neural based POS tagger for Tamil
-### Website - http://nlp-tools.uom.lk/thamizhi-pos/
+## Website - http://nlp-tools.uom.lk/thamizhi-pos/
 
 ThamizhiPOSt is a deep learning based POS tagger which is developed using Stanza framework, and trained using 11K POS tagged sentences along with fasttext model of Facebook. ThamizhiPOSt uses the Universal Dependency [POS tagset](https://universaldependencies.org/u/pos/) for the annotation. 
 
@@ -12,15 +12,31 @@ However, we found that the Amrita POS tagged data are more clean, therefore, we 
 
 The trained models can be [found here](http://nlp-tools.uom.lk/thamizhi-pos/models/models) in a compressed format. This file is in tgz format, you can extract it using tar.
 
-### How to use ThamizhiPOSt
+## How to use ThamizhiPOSt
 
+
+### Setting up ThamizhiUDp:
+You need to have Python 3.0. In addition, install the following tools and libraries (These commands are for Debian based distribution, you can find the similar ones for other Linux distributions & Windows over the web):
+```
+pip3 install [stanza](https://stanfordnlp.github.io/stanza/installation_usage.html)
+[Download this compressed file](http://nlp-tools.uom.lk/thamizhi-pos/thamizhi-pos.zip) , and uncompressed it. You should be able to see a scipts: thamizhi-post.py, and a folder models
+```
+Run the following command:
+
+```
+python3 thamizhi-post.py "input-file"
+```
+where "input-file" is the text file you want to POS tag. (there should not be any empty lines in the file) . This will generate a file called pos-tagged.txt. 
+
+Note: To use this version of tagger, it is compulsory to include a symbol (can be a period/exclamation mark / question mark) at the end of each line/sentence. Otherwise, the very last token will be considered as a punctuation. 
+
+<!--
 1. Download and install *Stanza*, as outlined here: https://stanfordnlp.github.io/stanza/installation_usage.html
 2. Donwload [trained models](http://nlp-tools.uom.lk/thamizhi-pos/models/models), and place them in a folder called *models*
 3. Insert your data to be POS tagged in a file called *sentence.txt*, and place it in the same level as the models folder
 4. Download and place *print_upos.py*, along with *sentence.txt*
 5. Execute the python script -  print_upos.py, output will be written to a file called *pos-tagged-sentence.txt*
-
-Note: In this version of tagger, it is compulsory to include a symbol (can be a period/exclamation mark / question mark) at the end of each line/sentence. Otherwise, the very last token will be considered as a punctuation. 
+-->
 
 An output will look like the following for the data "தமிழ் எங்கள் உயிருக்கு நேர் ."
 ```
