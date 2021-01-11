@@ -53,5 +53,17 @@ The following datasets are tagged using ThamizhiPOSt, available for research :
 - [Official data](https://github.com/sarves/thamizhi-pos/tree/main/tagged-data) (consists of Annual reports, Audit reports, Letters - anonymised) - 8,932 tokens/1,100 sentences
 - [Sri Lankan Tamil news data](https://github.com/sarves/thamizhi-pos/tree/main/tagged-data) - 124,203 tokens / 10,000 sentences
 
+### Cite
+Please cite this if you use Thamizhi-POS tool / models / tagged data:
+
+@misc{sarveswaran2020thamizhiudp,
+      title={ThamizhiUDp: A Dependency Parser for Tamil}, 
+      author={Sarveswaran, Kengatharaiyer and Dias, Gihan},
+      year={2020},
+      eprint={2012.13436},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
 ### Acknowledgment
 This research was supported by the Accelerating Higher Education Expansion and Development (AHEAD) Operation of the Ministry of Higher Education, Sri Lanka funded by the World Bank.
